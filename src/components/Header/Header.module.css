@@ -1,0 +1,146 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(100px);
+  }
+  
+  .header.scrolled {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+  
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logoLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logoText {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .navDesktop {
+    display: flex;
+  }
+  
+  .navList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .navLink {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+  }
+  
+  .navLink:hover {
+    color: var(--primary-color);
+  }
+  
+  .navLink.active {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  
+  /* Mobile Menu Toggle */
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+  }
+  
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .hamburgerBox {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hamburgerInner {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease;
+  }
+  
+  .hamburgerInner::before,
+  .hamburgerInner::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .hamburgerInner::before {
+    top: -8px;
+  }
+  
+  .hamburgerInner::after {
+    top: 8px;
+  }
+  
+  /* Theme Toggle */
+  .themeToggleDesktop {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navDesktop {
+      display: none;
+    }
+    
+    .menuToggle {
+      display: block;
+    }
+    
+    .themeToggleDesktop {
+      display: none;
+    }
+  }

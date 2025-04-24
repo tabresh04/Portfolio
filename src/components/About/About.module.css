@@ -1,0 +1,68 @@
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: top;
+  }
+  
+  .aboutImage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagePlaceholder {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    border-radius: var(--border-radius);
+    background-color: var(--card-bg);
+  }
+  
+  .aboutContent {
+    max-width: 500px;
+  }
+  
+  .aboutSubtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .aboutText {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .skillItem {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skillInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skillBar {
+    height: 8px;
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skillProgress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .aboutImage {
+      order: -1;
+    }
+  }

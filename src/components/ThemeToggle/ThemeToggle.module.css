@@ -1,0 +1,40 @@
+.sun, .moon {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* Prevent double click area */
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sun:hover {
+  transform: rotate(20deg);
+}
+
+.moon:hover {
+  transform: rotate(-10deg);
+}
+
+.themeToggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  z-index: 1001;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  overflow: hidden;
+}

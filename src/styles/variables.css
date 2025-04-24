@@ -1,0 +1,30 @@
+:root {
+  /* Base Colors */
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --card-bg: #121212;
+  --border-color: #333333;
+  
+  /* Primary Accent */
+  --primary-color: #ff4d4d;
+  --primary-light: rgba(255, 77, 77, 0.1);
+  
+  /* Spacing */
+  --section-padding: clamp(60px, 8vw, 120px);
+  --border-radius: 12px;
+  
+  /* Typography */
+  --font-base: 'Inter', system-ui, sans-serif;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --card-bg: #f8f8f8;
+  --border-color: #e0e0e0;
+}
+
+/* System font stack for performance */
+body {
+  font-family: var(--font-base);
+}
