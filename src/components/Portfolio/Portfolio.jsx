@@ -20,7 +20,7 @@ const Portfolio = () => {
       id: 2,
       title: 'GYM',
       category: 'web',
-      image: './assets/images/GYM.png',
+      image: './src/assets/images/GYM.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/GYMInf/'
     },
