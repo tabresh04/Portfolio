@@ -1,6 +1,6 @@
-.container{
+/* .container{
   max-height: 90vh;
-}
+} */
 .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
