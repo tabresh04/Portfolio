@@ -12,7 +12,7 @@ const Portfolio = () => {
       id: 1,
       title: 'Resturant(In Progress)',
       category: 'web',
-      image: './src/assets/images/Resturantt.png', 
+      image: './public/images/Resturantt.png', 
       tags: ['React', 'Node.js', 'MongoDB'],
       link: '#'
     },
@@ -20,7 +20,7 @@ const Portfolio = () => {
       id: 2,
       title: 'GYM',
       category: 'web',
-      image: './src/assets/images/GYM.png',
+      image: './public/images/GYM.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/GYMInf/'
     },
@@ -28,7 +28,7 @@ const Portfolio = () => {
       id: 3,
       category: 'web',
       title: 'Calculator',
-      image: './src/assets/images/Calculator.png',
+      image: './public/images/Calculator.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/Calculator/'
     },
@@ -36,7 +36,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Weather',
       category: 'web',
-      image: './src/assets/images/WeatherAPI.png',
+      image: './public/images/WeatherAPI.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/WeatherAPI/'
     },
@@ -44,11 +44,12 @@ const Portfolio = () => {
       id: 5,
       title: 'Tic Tac Toe',
       category: 'web',
-      image: './src/assets/images/Tic-Tac-Toe.png',
+      image: './public/images/Tic-Tac-Toe.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/Tic-Tac-Toe/'
     },
   ];
+  
 
   const filters = [
     { id: 'all', label: 'All Projects' },

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import heroImage from '../../assets/images/Hero.png';
+import heroImage from '../../../public/images/Hero.png';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
