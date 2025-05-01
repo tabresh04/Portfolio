@@ -29,7 +29,7 @@ const Portfolio = () => {
       title: 'Calculator',
       category: 'web',
       image: '/Portfolio/images/Calculator.png',
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      tags: ['React', 'CSS'],
       link: 'https://tabresh04.github.io/Calculator/'
     },
     {
