@@ -32,7 +32,11 @@ const Hero = () => {
           <p className={styles.heroText}>
             I craft digital experiences that are fast, accessible, and visually appealing.
           </p>
+<<<<<<< HEAD
           <a href="https://drive.google.com/file/d/1kVuRUaz6s4UoBZSJcg1f9_C6nlDvVeqH/view?usp=drive_link">
+=======
+          <a href="https://drive.google.com/file/d/1kVuRUaz6s4UoBZSJcg1f9_C6nlDvVeqH/view?usp=drivesdk">
+>>>>>>> c58be48a96ae53451cb627fe780055e6e8168bcc
           <button className={styles.heroButton}>
             Download CV
             <span className={styles.buttonArrow}>→</span>
