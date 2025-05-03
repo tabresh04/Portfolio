@@ -18,19 +18,19 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: 'Calculator',
+      category: 'web',
+      image: '/Portfolio/images/Calculator.png',
+      tags: ['Reacts', 'CSS'],
+      link: 'https://tabresh04.github.io/Calculator/'
+    },
+    {
+      id: 3,
       title: 'GYM',
       category: 'web',
       image: '/Portfolio/images/GYM.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://tabresh04.github.io/GYMInf/'
-    },
-    {
-      id: 3,
-      title: 'Calculator',
-      category: 'web',
-      image: '/Portfolio/images/Calculator.png',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://tabresh04.github.io/Calculator/'
     },
     {
       id: 4,
