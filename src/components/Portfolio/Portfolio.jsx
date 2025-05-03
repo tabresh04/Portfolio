@@ -33,8 +33,6 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/GYMInf/'
     },
     {
-<<<<<<< HEAD
-=======
       id: 3,
       title: 'Calculator',
       category: 'web',
@@ -43,7 +41,6 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/Calculator/'
     },
     {
->>>>>>> c58be48a96ae53451cb627fe780055e6e8168bcc
       id: 4,
       title: 'Weather',
       category: 'web',
