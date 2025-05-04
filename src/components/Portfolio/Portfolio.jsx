@@ -33,14 +33,6 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/GYMInf/'
     },
     {
-      id: 3,
-      title: 'Calculator',
-      category: 'web',
-      image: '/Portfolio/images/Calculator.png',
-      tags: ['React', 'CSS'],
-      link: 'https://tabresh04.github.io/Calculator/'
-    },
-    {
       id: 4,
       title: 'Weather',
       category: 'web',
