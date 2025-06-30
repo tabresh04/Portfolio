@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiMail, FiMapPin, FiGithub, FiLinkedin } from 'react-icons/fi';
 import styles from './Contact.module.css';
 

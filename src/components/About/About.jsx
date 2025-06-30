@@ -18,8 +18,9 @@ const About = () => {
             <h3>
             Hi, I’m <strong>Tabresh Shaikh</strong>, a passionate web developer with a strong interest in creating clean, responsive, and user-focused websites.<br/><br/>
 
-            My main focus right now is on <strong>frontend development</strong>, where I work with technologies like React.js, HTML, CSS, and JavaScript to build engaging user interfaces.<br/>
-            I'm also in the process of learning <strong>backend development</strong>, exploring tools like Node.js, Express, and MongoDB to eventually become a full-stack developer.<br/><br/>
+            I am fullstack/Mern stack developer, with understanding of SQL and non-SQL data bases.
+
+            <br/><br/>
 
             I believe in writing efficient, readable code and continuously improving my skill set with every project.<br/><br/>
             When I’m not coding, you’ll find me experimenting with new project ideas, diving into cybersecurity tools, or playing BGMI for a quick refresh!

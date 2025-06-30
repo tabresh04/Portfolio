@@ -41,7 +41,8 @@
   .projectsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
+    border-radius: 20PX;
   }
   
   .projectCard {
@@ -52,6 +53,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     background-color: rgb(86, 86, 86);
+    border-radius: 20PX;
   }
   
   .projectCard:hover {

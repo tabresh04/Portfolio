@@ -10,6 +10,22 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: 'AirBNB',
+      category: 'web',
+      image: '/Portfolio/images/airbnb.png', 
+      tags: ['EJS','Express.js', 'Node.js', 'MongoDB'],
+      link: 'https://airbnb-8zqu.onrender.com'
+    },
+    {
+      id: 2,
+      title: 'Recipe',
+      category: 'web',
+      image: '/Portfolio/images/recipe.png', 
+      tags: ['React', 'Express.js', 'Tailwind', 'MongoDB'],
+      link: 'https://recipehub-frontend-f6ep.onrender.com'
+    },
+    {
+      id: 3,
       title: 'Restaurant (In Progress)',
       category: 'web',
       image: '/Portfolio/images/Resturantt.png', 
@@ -17,7 +33,7 @@ const Portfolio = () => {
       link: '#'
     },
     {
-      id: 2,
+      id: 4,
       title: 'Calculator',
       category: 'web',
       image: '/Portfolio/images/Calculator.png',
@@ -25,7 +41,7 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/Calculator/'
     },
     {
-      id: 3,
+      id: 5,
       title: 'GYM',
       category: 'web',
       image: '/Portfolio/images/GYM.png',
@@ -33,7 +49,7 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/GYMInf/'
     },
     {
-      id: 4,
+      id: 6,
       title: 'Weather',
       category: 'web',
       image: '/Portfolio/images/WeatherAPI.png',
@@ -41,7 +57,7 @@ const Portfolio = () => {
       link: 'https://tabresh04.github.io/WeatherAPI/'
     },
     {
-      id: 5,
+      id: 7,
       title: 'Tic Tac Toe',
       category: 'web',
       image: '/Portfolio/images/Tic-Tac-Toe.png',
@@ -101,7 +117,6 @@ const Portfolio = () => {
                 onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className={styles.projectImage}>
-                  {/* Image placeholder - replace with your actual image */}
                   <div 
                     className={styles.imagePlaceholder}
                     style={{ backgroundImage: `url(${project.image})` }}

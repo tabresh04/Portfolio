@@ -41,6 +41,7 @@
   line-height: 1.1;
   margin-bottom: 1.8rem;
   font-weight: 700;
+  color: rgb(43, 153, 255);
 }
 
 .name {
@@ -62,17 +63,19 @@
 .typingContainer {
   min-height: 4rem;
   margin: 1.5rem 0;
-  color: yellow;
+  color: rgb(43, 153, 255);
+  font-weight: 700;
+  z-index: 100;
 }
 
 .typingText {
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: var(--text-color);
   font-weight: 600;
-  background: linear-gradient(90deg, var(--primary-color), #ffffff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(90deg, var(--primary-color), #ffffff); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .heroText {
