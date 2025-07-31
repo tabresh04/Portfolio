@@ -1,0 +1,105 @@
+/* :root {
+  --background-main: #f8f9fa;
+  --card-bg: #fff;
+  --card-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --card-shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
+  --border-color: #e0e0e0;
+  --heading-color: #2d3a4a;
+  --text-color: #555;
+}
+
+[data-theme="dark"] {
+  --background-main: #181a1b;
+  --card-bg: #232627;
+  --card-shadow: 0 4px 16px rgba(0,0,0,0.32);
+  --card-shadow-hover: 0 8px 32px rgba(0,0,0,0.44);
+  --border-color: #444;
+  --heading-color: #e0e0e0;
+  --text-color: #ccc;
+} */
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: var(--background-main);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.common {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: 2rem 2.5rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 700px;
+  transition: box-shadow 0.2s;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.common:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.graduation img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  width: 200px;
+  max-width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+}
+
+.common h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: var(--heading-color);
+}
+
+.common p {
+  margin: 0.2rem 0;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .common {
+    max-width: 98vw;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  .graduation img,
+  .common img {
+    width: 160px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .common {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 99vw;
+  }
+  .graduation img,
+  .common img {
+    width: 100%;
+    height: 100px;
+    max-width: 220px;
+  }
+}

@@ -1,6 +1,7 @@
 .portfolio {
     background-color: var(--bg-color);
     padding: var(--section-padding) 0;
+    padding: 1rem;
   }
   
   .subtitle {

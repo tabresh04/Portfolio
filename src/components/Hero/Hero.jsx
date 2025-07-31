@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import heroImage from '../../../public/images/Hero.png';
+import heroImage from '../../../public/images/hiii.gif';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
           <p className={styles.heroText}>
             I craft digital experiences that are fast, accessible, and visually appealing.
           </p>
-          <a href="https://drive.google.com/file/d/1N7vEcq-Lvc093_txlkkywsTVIj25qrSe/view?usp=drive_link">
+          <a href="https://drive.google.com/file/d/1_L1yLmxqHYv3b8j-zyd7UFJ5eDXsN8tS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className={styles.heroButton}>
             Download CV
             <span className={styles.buttonArrow}>→</span>
@@ -45,8 +45,8 @@ const Hero = () => {
             alt="Shaikh Tabresh" 
             className={styles.profileImage}
             loading="lazy"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           />
         </div>
       </div>

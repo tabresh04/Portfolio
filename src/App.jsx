@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Sidebar from './components/Sidebar/Sidebar';
 import ThemeToggle from './components/ThemeToggle/ThemeToggle';
+import Education from './components/Education/Education';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -47,6 +48,7 @@ function App() {
         <About theme={theme} />
         <Services theme={theme} />
         <Portfolio theme={theme} />
+        <Education theme={theme} />
         <Contact theme={theme} />
       </main>
     </div>

@@ -2,21 +2,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Sidebar.module.css';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiX } from 'react-icons/fi';
+import img from '../../../public/images/Hero.png';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const navItems = [
     { id: 'home', label: 'Home', icon: '🏠' },
     { id: 'about', label: 'About', icon: '👤' },
-    { id: 'services', label: 'Services', icon: '🛠️' },
+    // { id: 'services', label: 'Services', icon: '🛠️' },
     { id: 'portfolio', label: 'Portfolio', icon: '🎨' },
     { id: 'contact', label: 'Contact', icon: '✉️' }
   ];
 
   const socialLinks = [
-    { icon: <FiGithub />, url: 'https://github.com/yourusername' },
-    { icon: <FiLinkedin />, url: 'https://linkedin.com/in/yourusername' },
-    { icon: <FiTwitter />, url: 'https://twitter.com/yourusername' },
-    { icon: <FiMail />, url: 'mailto:your@email.com' }
+    { icon: <FiGithub />, url: 'https://github.com/tabresh04' },
+    { icon: <FiLinkedin />, url: 'https://www.linkedin.com/in/shaikh-tabresh-3686a926b' },
+    // { icon: <FiTwitter />, url: 'https://twitter.com/yourusername' },
+    { icon: <FiMail />, url: 'mailto:tabresh786shaikh@email.com' }
   ];
 
   const handleNavigation = (id) => {
@@ -63,8 +64,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           {/* Profile Section */}
           <div className={styles.profile}>
             <div className={styles.avatar}>
-              {/* Replace with your image */}
-              <div className={styles.avatarPlaceholder}></div>
+              {/* image section */}
+              <div className={styles.avatarPlaceholder}>
+                {/* <img src={img} alt="Profile" /> */}
+              </div>
             </div>
             <h3 className={styles.profileName}>Shaikh Tabresh</h3>
             <p className={styles.profileTitle}>Web Developer</p>

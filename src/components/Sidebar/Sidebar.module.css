@@ -64,6 +64,8 @@
     height: 100%;
     background-color: var(--bg-color);
     /* Replace with your image: background-image: url('/path/to/your/image.jpg'); */
+    background-image: url('/images/Hero.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }

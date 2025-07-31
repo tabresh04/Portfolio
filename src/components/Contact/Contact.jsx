@@ -1,12 +1,15 @@
 import { FiMail, FiMapPin, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FaCode } from 'react-icons/fa';
+import { SiGeeksforgeeks } from 'react-icons/si';
 import styles from './Contact.module.css';
+
 
 const Contact = ({ theme }) => {
   return (
     <section className={styles.contact} id="contact">
       <div className="container">
         <h2 className={styles.sectionTitle}>Contact Me</h2>
-        
+
         <div className={styles.contactContainer}>
           {/* Contact Info Section */}
           <div className={styles.contactInfo}>
@@ -15,14 +18,14 @@ const Contact = ({ theme }) => {
                 <FiMail className={styles.contactIcon} />
                 <div>
                   <h3>Email</h3>
-                  <a 
+                  <a
                     className={styles.contactLink}
                   >
                     tabresh786shaikh@gmail.com
                   </a>
                 </div>
               </div>
-              
+
               <div className={styles.infoItem}>
                 <FiMapPin className={styles.contactIcon} />
                 <div>
@@ -33,9 +36,9 @@ const Contact = ({ theme }) => {
 
               {/* Social Links */}
               <div className={styles.socialContainer}>
-                <a 
-                  href="https://github.com/tabresh04" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/tabresh04"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="GitHub"
@@ -43,9 +46,9 @@ const Contact = ({ theme }) => {
                   <FiGithub />
                   <span>GitHub</span>
                 </a>
-                <a 
-                  href="https://linkedin.com/in/shaikh-tabresh-3686a926b" 
-                  target="_blank" 
+                <a
+                  href="https://linkedin.com/in/shaikh-tabresh-3686a926b"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                   aria-label="LinkedIn"
@@ -53,9 +56,29 @@ const Contact = ({ theme }) => {
                   <FiLinkedin />
                   <span>LinkedIn</span>
                 </a>
+                <a
+                  href="https://leetcode.com/u/tabresh04/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                  aria-label="LeetCode"
+                >
+                  <FaCode />
+                  <span>LeetCode</span>
+                </a>
+                <a
+                  href="https://www.geeksforgeeks.org/user/noothin1nji/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                  aria-label="GeeksforGeeks"
+                >
+                  <SiGeeksforgeeks />
+                  <span>GeeksforGeeks</span>
+                </a>
               </div>
             </div>
-            
+
             {/* Google Map Embed */}
             <div className={styles.mapContainer}>
               <iframe
@@ -67,54 +90,54 @@ const Contact = ({ theme }) => {
               ></iframe>
             </div>
           </div>
-          
+
           {/* Contact Form */}
-          <form 
+          <form
             className={styles.contactForm}
             action="https://formsubmit.co/noothing4108@gmail.com"
             method="POST"
           >
             {/* FormSubmit Hidden Fields */}
-            <input type="hidden" name="_captcha" value="false" /> 
+            <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_subject" value="New Portfolio Message!" />
             <input type="hidden" name="_autoresponse" value="Thanks for contacting me! I'll get back to you soon." />
 
             {/* Form Inputs */}
             <div className={styles.formGroup}>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="name"
-                placeholder="Your Name" 
+                placeholder="Your Name"
                 className={styles.formInput}
-                required 
+                required
               />
             </div>
             <div className={styles.formGroup}>
-              <input 
-                type="email" 
-                name="email"  
-                placeholder="Your Email" 
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
                 className={styles.formInput}
-                required 
+                required
               />
             </div>
             <div className={styles.formGroup}>
-              <input 
-                type="text" 
-                name="subject" 
-                placeholder="Subject" 
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
                 className={styles.formInput}
-                required 
+                required
               />
             </div>
             <div className={styles.formGroup}>
-              <textarea 
-                name="message"  
-                placeholder="Your Message" 
-                rows="5" 
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
                 className={styles.formTextarea}
-                required 
+                required
               ></textarea>
             </div>
             <button type="submit" className={styles.submitButton}>
